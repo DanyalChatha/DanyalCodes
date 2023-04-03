@@ -1,0 +1,10 @@
+extends layout 
+
+block layout-content 
+  .content
+    h1.page-title Players Detail
+      each p in players 
+        h2 #{p.player.name}
+        h4 #{p.player.team.name}
+        p #{p.player.jerseyNumber}
+        p #{p.player.position}
